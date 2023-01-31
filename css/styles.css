@@ -8,6 +8,11 @@
     margin-left: 80px;
     margin-bottom: 105px;
 }
+.text {
+    font-size: 25px;
+    line-height: 30px;
+    color: #2a2a2a;
+}
 
 .intro {
     background-color: #efefef;
@@ -197,6 +202,29 @@
     text-align: center;
     margin: 0 auto;
     max-width: 1370px;
+}
+
+.investments__container {
+    display: flex;
+}
+.investments__img {
+    flex: 1 1 41%;
+}
+.investments__subtitle {
+    letter-spacing: normal;
+    margin-bottom: 13px;
+    max-width: 516px;
+}
+.investments__content {
+    flex: 1 1 59%;
+    background-color: #efefef;
+    padding: 115px 15px 115px 167px;
+}
+.investments__title {
+    margin-bottom: 112px;
+}
+.investments__text {
+    max-width: 870px;
 }
 
 @media (max-width: 1960px) {
