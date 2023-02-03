@@ -13,6 +13,51 @@
     line-height: 30px;
     color: #2a2a2a;
 }
+.title {
+    color: #2a2a2a;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 105%;
+    letter-spacing: 0.01em;
+}
+.title span {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    position: relative;
+}
+.subtitle {
+    text-transform: uppercase;
+    color: #af354c;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 105%;
+    letter-spacing: 0.18em;
+}
+.arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.arrow:before {
+    content: '';
+    width: 184px;
+    height: 2px;
+    background-color: #2a2a2a;
+    display: inline-block;
+}
+.arrow:after {
+    content: '';
+    position: absolute;
+    border: solid #2a2a2a;
+    border-radius: 2px;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    left: 174px;
+}
 
 .intro {
     background-color: #efefef;
@@ -64,37 +109,9 @@
 .intro__list li.icon-4:before {
     font-size: 24px;
 }
-.title {
-    color: #2a2a2a;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 105%;
-    letter-spacing: 0.01em;
-}
 .intro__title {
     margin-bottom: 17px;
     max-width: 590px;
-}
-.title span {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-}
-.title span:before {
-    content: '';
-    width: 184px;
-    height: 2px;
-    background-color: #2a2a2a;
-    display: inline-block;
-}
-.subtitle {
-    text-transform: uppercase;
-    color: #af354c;
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 105%;
-    letter-spacing: 0.18em;
 }
 .intro__subtitle {
     margin-bottom: 50px;
@@ -117,18 +134,18 @@
     gap: 56px;
     margin-left: 84px;
 }
-.intro__social li {
+.intro__social li a {
     font-size: 0;
 }
-.intro__social li.icon-5:before {
+.intro__social li a.icon-5:before {
     font-size: 31px;
     color: #2a2a2a;
 }
-.intro__social li.icon-6:before {
+.intro__social li a.icon-6:before {
     font-size: 20px;
     color: #2a2a2a;
 }
-.intro__social li.icon-7:before {
+.intro__social li a.icon-7:before {
     font-size: 40px;
     color: #2a2a2a;
 }
@@ -172,6 +189,9 @@
     margin-right: 40px;
 }
 
+.floors {
+    background-color: #2a2a2a;
+}
 .floors__container {
     background: url('../img/bg2.jpeg');
     padding: 380px 15px;
@@ -205,6 +225,9 @@
     max-width: 1370px;
 }
 
+.investments {
+    background-color: #efefef;
+}
 .investments__container {
     display: flex;
     min-height: 1080px;
@@ -295,6 +318,9 @@
     width: 217px;
 }
 
+.director {
+    background-color: #2a2a2a;
+}
 .director__container {
     display: flex;
 }
@@ -329,6 +355,8 @@
     display: flex;
     align-items: center;
     height: 100%;
+    position: relative;
+    margin-right: -125px;
 }
 .director__content-two img {
     width: 320px;
@@ -339,6 +367,7 @@
     text-transform: uppercase;
     color: #2a2a2a;
     margin-right: 20px;
+    max-width: 790px;
 }
 .director__content-two p span {
     font-weight: 900;
@@ -410,6 +439,9 @@
     flex: 1 1 58%;
 }
 
+.advantage {
+    background-color: #efefef;
+}
 .advantage__container {
     display: flex;
 }
@@ -419,6 +451,7 @@
 }
 .advantage__img {
     flex: 1 1 63%;
+    position: relative;
 }
 .advantage__content {
     flex: 1 1 37%;
@@ -445,12 +478,23 @@
     position: absolute;
     left: 0;
 }
-.advantage__img img {
+.advantage__img-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+.advantage__logo {
+    position: absolute;
+    left: 80px;
+    bottom: 80px;
+}
+.advantage__logo img {
+    width: 217px;
+}
 
+.worth {
+    background-color: #efefef;
+}
 .worth__container {
     display: flex;
 }
@@ -527,6 +571,16 @@
     background-image: url('../img/bg13.jpeg');
     background-size: cover;
 }
+.worth__arrow {
+    margin-bottom: 24px;
+}
+.worth__arrow:before {
+    background-color: white;
+}
+.worth__arrow:after {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+}
 
 .investments2 {
     background-color: #2a2a2a;
@@ -534,6 +588,7 @@
 .investments2__content {
     background-color: #2a2a2a;
     padding: 133px 107px 151px 107px;
+    position: relative;
 }
 .investments2__subtitle {
     letter-spacing: normal;
@@ -562,7 +617,15 @@
 .investments2__logo img {
     width: 217px;
 }
+.investments2__arrow {
+    position: absolute;
+    right: 79px;
+    bottom: 79px;
+}
 
+.profitability {
+    background-color: #efefef;
+}
 .profitability__container {
     display: flex;
 }
@@ -573,11 +636,20 @@
 }
 .profitability__img {
     flex: 1 1 32%;
+    position: relative;
 }
-.profitability__img img {
+.profitability__logo {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+}
+.profitability__img-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.profitability__logo-img {
+    width: 217px;
 }
 .profitability__block {
     padding: 73px 78px 78px 78px;
@@ -624,6 +696,52 @@
     position: absolute;
 }
 
+.payback {
+    background-color: #efefef;
+}
+.payback__container {
+    display: flex;
+}
+.payback__content {
+    flex: 1 1 68%;
+    padding: 80px 166px 158px 80px;
+    background-color: #efefef;
+}
+.payback__img {
+    flex: 1 1 32%;
+    background-image: url('../img/bg17.jpeg');
+    background-size: cover;
+    position: relative;
+}
+.payback__logo {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+}
+.payback__logo img {
+    width: 217px;
+}
+.payback__subtitle {
+    letter-spacing: normal;
+    margin-bottom: 177px;
+}
+.payback__list {
+    max-width: 890px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 170px;
+    margin-left: 174px;
+}
+.payback__list-item {
+    position: relative;
+}
+.payback__list-item:before {
+    content: url('../img/icon2.png');
+    left: -45px;
+    position: absolute;
+}
+
 @media (max-width: 1960px) {
     .container {
         max-width: none;
@@ -635,7 +753,8 @@
         height: 100%;
         object-fit: cover;
     }
-    .intro__title span:before {
+    .intro__title span:before,
+    .intro__title span:after {
         display: none;
     }
     .investments__content {
@@ -661,6 +780,9 @@
     .director__img {
         display: none;
     }
+    .director__content-two {
+        margin-right: 0;
+    }
 }
 @media (max-width: 1420px) {
     .profit__img img {
@@ -676,6 +798,9 @@
     }
     .profit__content {
         padding-left: 15px;
+    }
+    .payback__list {
+        margin-left: 45px;
     }
 }
 @media (max-width: 1280px) {
@@ -697,7 +822,8 @@
     .title,
     .subtitle,
     .floors__title,
-    .director__content-two p {
+    .director__content-two p,
+    .profitability__text {
         font-size: 40px;
     }
     .investments__title span:before {
@@ -772,6 +898,15 @@
     .profitability__img {
         display: none;
     }
+    .payback__img {
+        display: none;
+    }
+    .payback__list {
+        max-width: none;
+    }
+    .advantage__content {
+        padding-left: 15px;
+    }
 }
 @media (max-width: 1024px) {
     .risks__title span:before {
@@ -827,6 +962,17 @@
     .profitability__block {
         padding: 73px 15px 78px 15px;
     }
+    .payback__content {
+        padding: 80px 15px 158px 15px;
+    }
+    .worth__arrow,
+    .worth__arrow:before,
+    .worth__arrow:after {
+        display: none;
+    }
+    .worth__block-1 {
+        padding: 40px 15px;
+    }
 }
 @media (max-width: 768px) {
     .intro__flex {
@@ -839,7 +985,8 @@
     .title,
     .subtitle,
     .floors__title,
-    .director__content-two p {
+    .director__content-two p,
+    .profitability__text {
         font-size: 30px;
     }
     .logo {
@@ -882,6 +1029,37 @@
     }
     .worth__content-two {
         flex-direction: column;
+    }
+    .intro__social {
+        margin-left: 15px;
+    }
+    .profit__flex-item {
+        text-align: left;
+    }
+    .profit__flex-item span {
+        font-size: 40px;
+    }
+    .risks__list li {
+        font-size: 18px;
+    }
+    .risks__list li:before {
+        transform: scale(0.6);
+        margin-right: 0;
+    }
+    .risks__container {
+        padding: 136px 15px 127px 15px;
+    }
+    .risks__title {
+        margin-bottom: 40px;
+    }
+    .payback__subtitle {
+        margin-bottom: 40px;
+    }
+    .payback__list {
+        margin-bottom: 50px;
+    }
+    .investments__content {
+        padding-top: 0;
     }
 }
 @media (max-width: 320px) {
